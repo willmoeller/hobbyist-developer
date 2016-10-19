@@ -9,37 +9,11 @@ layout: default
 <section>
   <h1>All Articles</h1>
   <ul>
-    <li class="article-preview">
-      <h4>Article #1</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Tofu viral tumeric shoreditch, craft beer disrupt dreamcatcher ramps fashion axe yr narwhal chillwave chambray kogi. Offal cornhole butcher portland normcore. YOLO venmo locavore skateboard.</p>
-    </li>
-    <li class="article-preview">
-      <h4>Article #2</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Authentic try-hard thundercats VHS cray, kickstarter fam chillwave actually before they sold out microdosing ugh flannel chia. Kitsch lomo snackwave four dollar toast man bun, poke sartorial godard hella.</p>
-    </li>
-    <li class="article-preview">
-      <h4>Article #3</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Readymade migas VHS kickstarter DIY, intelligentsia before they sold out hoodie fam disrupt typewriter. Kitsch intelligentsia slow-carb, direct trade raw denim vaporware literally snackwave trust fund.</p>
-    </li>
-    <li class="article-preview">
-      <h4>Article #4</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Tumblr yuccie affogato, austin glossier craft beer chia. Mumblecore synth next level heirloom, mlkshk copper mug pork belly. Unicorn literally roof party pickled, ramps scenester squid blue bottle master cleanse.</p>
-    </li>
-    <li class="article-preview">
-      <h4>Article #5</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Prism celiac typewriter man braid farm-to-table. Echo park cronut fashion axe hoodie. Pour-over man bun asymmetrical, hexagon cred gluten-free kale chips messenger bag master cleanse venmo hammock put a bird on it tote bag.</p>
-    </li>
-    <li class="article-preview">
-      <h4>Article #6</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Cornhole woke gluten-free neutra, enamel pin drinking vinegar health goth chicharrones 90's sartorial pork belly air plant you probably haven't heard of them. Fashion axe mixtape raw denim, sartorial squid organic seitan.</p>
-    </li>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.summary }}
+      </li>
+    {% endfor %}
   </ul>
 </section>
-
-{% include footer.html %}
