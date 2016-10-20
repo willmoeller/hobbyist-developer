@@ -15,21 +15,13 @@ layout: default
 <section>
   <h2>Recent Articles</h2>
   <ul>
-    <li class="article-preview">
-      <h4>Article #1</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Tofu viral tumeric shoreditch, craft beer disrupt dreamcatcher ramps fashion axe yr narwhal chillwave chambray kogi. Offal cornhole butcher portland normcore. YOLO venmo locavore skateboard.</p>
-    </li>
-    <li class="article-preview">
-      <h4>Article #2</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Authentic try-hard thundercats VHS cray, kickstarter fam chillwave actually before they sold out microdosing ugh flannel chia. Kitsch lomo snackwave four dollar toast man bun, poke sartorial godard hella.</p>
-    </li>
-    <li class="article-preview">
-      <h4>Article #3</h4>
-      <p class="publish-date">Sunday October 9th, 2016</p>
-      <p>Readymade migas VHS kickstarter DIY, intelligentsia before they sold out hoodie fam disrupt typewriter. Kitsch intelligentsia slow-carb, direct trade raw denim vaporware literally snackwave trust fund.</p>
-    </li>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+        <p>{{ post.summary }}</p>
+      </li>
+    {% endfor %}
   </ul>
 </section>
 

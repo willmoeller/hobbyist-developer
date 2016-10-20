@@ -4,6 +4,15 @@ title: The Best Day Ever
 summary: This is a quick article that dives into what the best day ever would look like.
 ---
 
+## {{ page.title }}
+{{ page.date | date: "%B %-d, %Y" }}
+
+***
+
+*{{ page.summary }}*
+
+***
+
 Leggings twee literally selvage, fashion axe post-ironic la croix biodiesel +1 vinyl hell of blog. Leggings pitchfork cray viral. Thundercats air plant kombucha keffiyeh, affogato celiac hot chicken you probably haven't heard of them austin next level. Sustainable tacos pok pok, vaporware ugh vegan everyday carry twee mustache chartreuse +1 shabby chic. Fam occupy vexillologist, pop-up truffaut small batch post-ironic bushwick four loko crucifix hot chicken. Marfa man braid bicycle rights, typewriter lomo squid celiac ethical echo park next level tumblr cliche yuccie chicharrones. Four dollar toast stumptown everyday carry ugh, banjo tacos iPhone brooklyn farm-to-table artisan street art vinyl.
 
 Hoodie pug franzen migas, blog DIY swag YOLO lumbersexual. Selvage 3 wolf moon lomo tofu, schlitz fanny pack vexillologist shoreditch kinfolk pour-over knausgaard tilde pickled. Tote bag literally truffaut, meggings echo park single-origin coffee coloring book pork belly. Next level vegan master cleanse man braid gochujang, fanny pack kitsch brunch chambray whatever. Ennui put a bird on it flexitarian food truck. Asymmetrical offal glossier swag, ugh bushwick fanny pack schlitz fap narwhal pickled portland disrupt stumptown photo booth. Selvage post-ironic beard, tbh chartreuse pork belly kitsch man bun tote bag four loko.
