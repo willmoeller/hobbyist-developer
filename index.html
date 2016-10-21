@@ -5,7 +5,7 @@ layout: default
 <section>
   <h1>Welcome!</h1>
   <h3>Interested in web development? If yes, you're in the right place.</h3>
-  <p><a href="#">Learn More</a> or <a href="articles">Read Posts</a></p>
+  <p><a href="#">Learn More</a> or <a href="{{site.base_url}}/articles">Read Posts</a></p>
 </section>
 
 <section>
@@ -18,7 +18,7 @@ layout: default
   <ul>
     {% for post in site.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{site.base_url}}{{post.url}}">{{ post.title }}</a>
         <p>{{ post.date | date: "%B %-d, %Y" }}</p>
         <p>{{ post.summary }}</p>
       </li>

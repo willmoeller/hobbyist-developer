@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: The Best Day Ever
 summary: This is a quick article that dives into what the best day ever would look like.
 ---
