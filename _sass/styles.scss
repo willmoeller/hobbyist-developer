@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.landing {
+  text-align: center;
+  background-color: #FFE272;
+  height: 400px;
+  .welcome-text {
+    padding-top: 160px;
+    h1 {
+      font-family: 'Shrikhand', cursive;
+      font-size: 3em;
+    }
+    h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.1em;
+      padding-top: 5px;
+    }
+    .actions {
+      color: #6A5E2F;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 0.9em;
+      padding-top: 30px;
+      span {
+        text-transform: lowercase;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+.introduction {
+  padding-top: 3em;
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+  }
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
