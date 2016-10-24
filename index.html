@@ -15,16 +15,16 @@ layout: default
   <p>Bushwick lumbersexual schlitz post-ironic health goth. 3 wolf moon ramps enamel pin XOXO, blue bottle hammock echo park succulents godard shoreditch swag next level pinterest four dollar toast pop-up. Pour-over unicorn franzen banh mi retro enamel pin. Sartorial man bun 3 wolf moon next level, kitsch pabst mlkshk VHS listicle distillery shoreditch banh mi everyday carry fam. Semiotics authentic knausgaard, offal artisan succulents jianbing sriracha. Tousled VHS heirloom, man bun twee gochujang williamsburg tofu butcher polaroid tilde put a bird on it lumbersexual leggings. Selvage fixie prism, aesthetic la croix humblebrag knausgaard semiotics edison bulb tumeric copper mug marfa.</p>
 </section>
 
-<section class="wrapper">
+<section class="wrapper recent-posts">
   <h2>Most Recent Posts</h2>
   <ul>
     {% for post in site.posts %}
-      <li>
-        <a href="{{site.base_url}}{{post.url}}">{{ post.title }}</a>
-        <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+      <li class="post-preview">
+        <h4><a href="{{site.base_url}}{{post.url}}">{{ post.title }}</a></h4>
+        <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
         <p>{{ post.summary }}</p>
       </li>
     {% endfor %}
   </ul>
-  <a href="#">All Posts</a>
+  <p class="button"><a href="{{site.base_url}}/articles">All Posts</a></p>
 </section>
