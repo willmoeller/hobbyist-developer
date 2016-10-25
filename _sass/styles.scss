@@ -134,7 +134,7 @@ body {
   }
 }
 
-.recent-posts {
+.posts {
   margin-top: 5em;
   margin-bottom: 5em;
   .button {
@@ -154,7 +154,7 @@ body {
     margin-bottom: 2em;
     h4 {
       font-family: "Open Sans", sans-serif;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.5em;
     }
     .date {
       color: #7C7C7C;
@@ -170,4 +170,14 @@ body {
   text-align: center;
   font-size: 0.9em;
   color: #7C7C7C;
+}
+
+.main-nav {
+  background-color: #FFE272;
+  height: 50px;
+  text-align: center;
+  li {
+    display: inline-block;
+    padding-top: 0.9em;
+  }
 }

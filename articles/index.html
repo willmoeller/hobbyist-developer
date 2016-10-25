@@ -2,12 +2,13 @@
 layout: articles
 ---
 
-<section>
-  <h1>All Articles</h1>
+<section class="wrapper posts">
+  <h2>All Posts</h2>
   <ul>
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+      <li class="post-preview">
+        <h4><a href="{{site.base_url}}{{post.url}}">{{ post.title }}</a></h4>
+        <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
         <p>{{ post.summary }}</p>
       </li>
     {% endfor %}
