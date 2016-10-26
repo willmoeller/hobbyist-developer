@@ -5,18 +5,17 @@ layout: default
 <section class="landing">
   <div class="wrapper welcome-text">
     <h1>Welcome!</h1>
-    <h3>Interested in web development? If yes, you're in the right place.</h3>
-    <p class="actions"><a href="#">Learn More</a> <span>or</span> <a href="{{site.base_url}}/articles">Read Posts</a></p>
+    <h3>If you're interested in web development, you're in the right place</h3>
   </div>
 </section>
 
-<section class="wrapper introduction">
-  <h2>A Quick Introduction</h2>
+<section class="wrapper content-block">
+  <h2 class="heading">An Introduction</h2>
   <p>Bushwick lumbersexual schlitz post-ironic health goth. 3 wolf moon ramps enamel pin XOXO, blue bottle hammock echo park succulents godard shoreditch swag next level pinterest four dollar toast pop-up. Pour-over unicorn franzen banh mi retro enamel pin. Sartorial man bun 3 wolf moon next level, kitsch pabst mlkshk VHS listicle distillery shoreditch banh mi everyday carry fam. Semiotics authentic knausgaard, offal artisan succulents jianbing sriracha. Tousled VHS heirloom, man bun twee gochujang williamsburg tofu butcher polaroid tilde put a bird on it lumbersexual leggings. Selvage fixie prism, aesthetic la croix humblebrag knausgaard semiotics edison bulb tumeric copper mug marfa.</p>
 </section>
 
-<section class="wrapper posts">
-  <h2>Most Recent Posts</h2>
+<section class="wrapper content-block">
+  <h2 class="heading">Recent Posts</h2>
   <ul>
     {% for post in site.posts %}
       <li class="post-preview">
@@ -26,5 +25,9 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  <p class="button"><a href="{{site.base_url}}/articles">All Posts</a></p>
+</section>
+
+<section class="wrapper content-block">
+  <h2 class="heading">Interesting Tidbits</h2>
+  <p>Bushwick lumbersexual schlitz post-ironic health goth. 3 wolf moon ramps enamel pin XOXO, blue bottle hammock echo park succulents godard shoreditch swag next level pinterest four dollar toast pop-up. Pour-over unicorn franzen banh mi retro enamel pin. Sartorial man bun 3 wolf moon next level, kitsch pabst mlkshk VHS listicle distillery shoreditch banh mi everyday carry fam. Semiotics authentic knausgaard, offal artisan succulents jianbing sriracha. Tousled VHS heirloom, man bun twee gochujang williamsburg tofu butcher polaroid tilde put a bird on it lumbersexual leggings. Selvage fixie prism, aesthetic la croix humblebrag knausgaard semiotics edison bulb tumeric copper mug marfa.</p>
 </section>

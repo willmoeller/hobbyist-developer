@@ -31,10 +31,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -65,8 +61,39 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
 
 body {
-  font-family: 'Lato', sans-serif;
+  font: 1em 'Lato', sans-serif;
 }
+
+p {
+  line-height: 1.7em;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid #FFE272;
+}
+
+a:visited {
+  color: #ACACAC;
+  border-bottom: 1px solid #ACACAC;
+}
+
 
 /* ==========================================================================
    Layout
@@ -86,6 +113,11 @@ body {
   max-width: 800px;
 }
 
+.content-block {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
 .landing {
   text-align: center;
   background-color: #FFE272;
@@ -95,11 +127,11 @@ body {
     h1 {
       font-family: 'Shrikhand', cursive;
       font-size: 3em;
+      margin-bottom: -0.2em;
     }
     h3 {
       font-family: 'Raleway', sans-serif;
       font-size: 1.1em;
-      padding-top: 5px;
     }
     .actions {
       color: #6A5E2F;
@@ -118,50 +150,17 @@ body {
   }
 }
 
-.introduction {
-  margin-top: 5em;
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    text-align: center;
+.post-preview {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.2em;
+  }
+  .date {
     text-transform: uppercase;
-    margin-bottom: 1.5em;
-  }
-  p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-}
-
-.posts {
-  margin-top: 5em;
-  margin-bottom: 5em;
-  .button {
-    margin-top: 3em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 1.5em;
-  }
-  .post-preview {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    h4 {
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 0.5em;
-    }
-    .date {
-      color: #7C7C7C;
-      text-transform: uppercase;
-      font-size: 0.75em;
-      margin-bottom: 1em;
-    }
+    font-size: 0.75em;
+    margin-bottom: 0.7em;
   }
 }
 
