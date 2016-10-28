@@ -1,7 +1,5 @@
 /* ==========================================================================
-   Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
+   Reset - http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126
    ========================================================================== */
 
 html, body, div, span, applet, object, iframe,
@@ -56,7 +54,7 @@ table {
 
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
 
@@ -68,16 +66,19 @@ p {
   line-height: 1.7em;
 }
 
-.heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 1.5em;
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* ==========================================================================
-   Links
+/* Links
    ========================================================================== */
 
 a:link {
@@ -94,18 +95,34 @@ a:visited {
   border-bottom: 1px solid #ACACAC;
 }
 
-
-/* ==========================================================================
-   Layout
+/* Navigation
    ========================================================================== */
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+.main-nav {
+  background-color: #FFE272;
+  height: 50px;
+  text-align: center;
+  li {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 1.28em;
+  }
+  a:link {
+    color: #7F7034;
+    text-decoration: none;
+  }
+  a:hover {
+    border-bottom: 1px solid #7F7034;
+  }
+  a:visited {
+    color: #7F7034;
+    border-bottom: 1px solid #7F7034;
+  }
 }
+
+/* Reusable components
+   ========================================================================== */
 
 .wrapper {
   margin: 0 auto;
@@ -114,9 +131,36 @@ a:visited {
 }
 
 .content-block {
-  margin-top: 6em;
-  margin-bottom: 6em;
+  margin-top: 5.5em;
+  margin-bottom: 5.5em;
 }
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.date {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  margin-bottom: 0.7em;
+  color: #515151;
+}
+
+.post-preview {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.2em;
+  }
+}
+
+/* Specific styles
+   ========================================================================== */
 
 .landing {
   text-align: center;
@@ -132,51 +176,55 @@ a:visited {
     h3 {
       font-family: 'Raleway', sans-serif;
       font-size: 1.1em;
-    }
-    .actions {
-      color: #6A5E2F;
-      text-transform: uppercase;
-      font-style: italic;
-      font-weight: 700;
-      font-size: 0.9em;
-      padding-top: 30px;
-      span {
-        text-transform: lowercase;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.8em;
-      }
+      margin-bottom: 1em;
     }
   }
 }
 
-.post-preview {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  h4 {
+.post {
+  h1 {
+    text-align: center;
     font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    margin-top: 2em;
     margin-bottom: 0.2em;
   }
-  .date {
-    text-transform: uppercase;
-    font-size: 0.75em;
-    margin-bottom: 0.7em;
+  h2 {
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 2em;
+    margin-bottom: 0.5em
+  }
+  .post-header {
+    text-align: center;
+    font-weight: 400;
+    hr {
+     border: 0;
+     height: 0;
+     border-top: 1px solid #DEDEDE;
+     width: 15%;
+    }
+  }
+  .post-summary {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-style: italic;
+  }
+  .content {
+    margin-top: 2.5em;
+    p {
+      margin-bottom: 1.6em;
+    }
   }
 }
 
+/* Footer
+   ========================================================================== */
+
 .footer {
+  margin-top: 4em;
   margin-bottom: 2em;
   text-align: center;
   font-size: 0.9em;
   color: #7C7C7C;
-}
-
-.main-nav {
-  background-color: #FFE272;
-  height: 50px;
-  text-align: center;
-  li {
-    display: inline-block;
-    padding-top: 0.9em;
-  }
 }
