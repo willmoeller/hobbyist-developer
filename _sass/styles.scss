@@ -54,9 +54,10 @@ table {
 
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:700');
 
 body {
   font: 1em 'Lato', sans-serif;
@@ -64,6 +65,14 @@ body {
 
 p {
   line-height: 1.7em;
+}
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+.img-circle {
+  border-radius: 50%;
 }
 
 /* ==========================================================================
@@ -76,6 +85,36 @@ p {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+/* Clearfix
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/* Buttons
+   ========================================================================== */
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
 }
 
 /* Links
@@ -99,33 +138,56 @@ a:visited {
    ========================================================================== */
 
 .main-nav {
-  background-color: #FFFFFF;
-  height: 45px;
-  color: #6A5E2F;
-  text-align: center;
-  font-size: 0.72em;
-  letter-spacing: 0.025em;
-  .yellow {
-    background-color: #FFE272;
+  margin: 0 auto;
+  max-width: 90%;
+  height: 70px;
+}
+
+.border {
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.logo {
+  float: left;
+  display: inline-block;
+  font-family: "Oxygen";
+  text-transform: uppercase;
+  font-size: 0.9em;
+  img {
+    float: left;
+    height: 27px;
+    margin-top: 24px;
   }
-  span {
-    padding-left: 0.7em;
-    padding-right: 0.7em;
+  p {
+    color: #4C4C4C;
+    margin-top: 25px;
+    margin-left: 7px;
+    float: right;
   }
+  a:visited {
+    color: #000;
+  }
+}
+
+.nav {
+  float: right;
   li {
+    color: #4C4C4C;
     text-transform: uppercase;
     display: inline-block;
-    padding-top: 1.4em;
+    font-size: 0.68em;
+    margin-top: 2.7em;
+    margin-left: 2.2em;
   }
   a:link {
-    color: #7F7034;
+    color: #000;
     text-decoration: none;
   }
   a:hover {
     border-bottom: 1px solid #7F7034;
   }
   a:visited {
-    color: #7F7034;
+    color: #000;
     border-bottom: 1px solid #7F7034;
   }
 }
@@ -223,6 +285,24 @@ a:visited {
     margin-top: 2.5em;
     p {
       margin-bottom: 1.6em;
+    }
+  }
+}
+
+.page {
+  p {
+    margin-bottom: 1.6em;
+  }
+  .page-header {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1.7em;
+    h1 {
+      font-size: 1.2em;
+      font-family: "Open Sans";
+    }
+    img {
+      margin-bottom: 1em;
     }
   }
 }
