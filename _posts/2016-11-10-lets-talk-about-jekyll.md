@@ -1,0 +1,41 @@
+---
+layout: post
+title: Let's talk about Jekyll
+summary: Jekyll is a powerful tool for static site creation. It's what I used to create this site. This article provides context on the key terms in Jekyll's README on GitHub so that aspiring web developers, or web developers who are unfamiliar with Jekyll, can understand the basics of what the tool is before they commit to using it.
+---
+
+I chose Jekyll for this site because it allows me to store all of my blog content locally on my computer, it doesn't require a database, and I can host my site easily on GitHub Pages. There are many articles that explain why Jekyll is great, so I'll refrain from restating what's already on out there. If you want to read more, here's some <a href="http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html" target="_blank" class="content-link">feedback from influencers</a> in the Jekyll community on why they use it.
+
+## Jekyll Overview
+Taking words from Jekyll's <a href="https://github.com/jekyll/jekyll" target="_blank" class="content-link">README on Github</a>, "Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages which you can use to host sites right from your GitHub repositories."
+
+When I first learned about Jekyll, I was relatively new to web development, so some of the terminology in this description was confusing to me. If you're in a similar situation, I'll breakdown what each of the key terms mean so that you can better understand what Jekyll is and determine whether it's a fit for the project you have in mind.
+
+## What is a CMS?
+A content management system (CMS) is an application that supports the creation and modification of digital content. Features may vary between applications, but content organization and content publishing are core to every CMS. The most popular example of a WCMS (web content management system) is <a href="https://wordpress.com/" target="_blank" class="content-link">WordPress</a>. Other examples of WCMSs include SquareSpace, Medium, Ghost, Tumblr, Wix, and Weebly. We'll focus on WCMSs in the rest of this section.
+
+The power of a WCMS is that it allows users to focus on content creation, not the technical processes required to make content available to readers on the web. If you had a WordPress blog, for example, all you would need to do to put a post on the web is write the post, input that post into the WCMS interface, choose a visual theme, then hit the 'Publish' button . If you noticed a typo and wanted to make a change, you could easily do so by editing the post in the WCMS and re-publishing. This simplicity is what makes WCMSs so popular. WordPress is so popular, in fact, that it reportedly <a href="https://w3techs.com/technologies/details/cm-wordpress/all/all" target="_blank" class="content-link">powers 27% of web sites</a>.
+
+## What is a static site?
+A static site is a web site where the content doesn't change. In other words, all of the content on the site is displayed in the exact same way to every user. Blogs, personal web pages, or online resumes are great options for static sites because they only need to display information in a pre-formatted way. You can read <a href="https://en.wikipedia.org/wiki/Static_web_page" target="_blank" class="content-link">more about static sites</a> on Wikipedia if you're interested. The opposite of a static site is, you guessed it, a dynamic site. Dynamic sites (often called web applications) change based on context. The concept of a static site is easy to visualize - it's just a combination of web pages. But dynamic sites can be confusing, so let's take a slight tangent to explore an example. 
+
+Amazon is a dynamic site. Say you want to log in to your Amazon account. To do this, you navigate to the Amazon home page and click the 'Sign In' button, where you enter your username and password. Once you've completed the form and clicked 'Sign In', you are directed to the same Amazon home page. In place of the 'Sign In' button you originally saw, you now see a welcome message that says 'Hello' and your name. For me, it would say, 'Hello, Will'. The 'Sign In' button and the message that shows up in its place once you are logged in are examples of dynamic content, and they change based on whether the user is logged in or not and who that user is.
+
+## What does blog aware mean?
+Blog aware is a fancy way of saying that Jekyll has blogging functionality built into its default file structure.  Blogging functionality, which we briefly touched on in the CMS section of this article, implies that the user can create, edit, publish, and destroy posts, save drafts of posts, and tag posts with metadata, such as categories or topics. Jekyll enables this functionality out of the box, making it easy to focus on content.
+
+If you take a look at <a href="https://jekyllrb.com/docs/structure/" target="_blank" class="content-link">Jekyll's default file structure</a>, you will notice a '_posts' folder, which houses all of your published posts, and a '_drafts' folder which you can use to store posts that aren't quite complete . You can also store metadata, such as tags, an excerpt, dates, and categories, in variables for each post you write, which will help you organize the content on your blog as it grows. You can read more about posts on the <a href="https://jekyllrb.com/docs/posts/" target="_blank" class="content-link">Jekyll home page</a>.
+
+## Markdown, Liquid, and GitHub hosting
+The last portion of the Jekyll description is execution-oriented. It's telling you the technical details behind how Jekyll takes your content and makes it available to your readers. We could spend hours on Markdown, Liquid, and GitHub, but to be proficient with Jekyll you only need to understand the basics. Below is a high level description of each topic, plus links to explore further.
+
+**Markdown** allows you to write HTML documents in plain text. In practice, this means that you don't need to insert HTML tags into posts. This is particularly useful for blogs, where pages contain a significant amount of text. Note that you can still write your posts using HTML, if you want. You can read more about Markdown on <a href="http://daringfireball.net/projects/markdown/" target="_blank" class="content-link">John Gruber's website, Daring Fireball</a>. He's the creator of Markdown.
+
+**Liquid** is a web templating language that allows you to create pre-defined views for displaying specific types of content. Here on Hobbyist Developer, for example, all of the blog posts are displayed in the same way using a template that I defined. Shopify, the creator of Liquid, <a href="https://www.shopify.com/partners/blog/115244038-an-overview-of-liquid-shopifys-templating-language" target="_blank" class="content-link">gives a great rundown of it here</a>. Also here's a Wikipedia article on <a href="https://en.wikipedia.org/wiki/Web_template_system" target="_blank" class="content-link">web templating systems</a>.
+
+**GitHub** is a repository for storing and sharing code. To be overly simplistic, you can think of it as a Dropbox specifically for developers. You can learn more about GitHub (and Git) using <a href="https://launchschool.com/books/git" target="_blank" class="content-link">Launch School's book on the topic</a>. Jekyll and GitHub are deeply integrated, which means that you can host your website for free using your <a href="https://pages.github.com/" target="_blank" class="content-link">GitHub Pages</a>.
+
+## Conclusion
+For those of you who are new to web development, but are interested in exploring Jekyll as a way to push your skillset forward, I hope that this article helped provide a high level overview of what Jekyll is and what you need to know to get started with using it. Jekyll is a great tool and I recommend that anyone who is a web developer (or aspiring web developer) learn to use Jekyll if they want to create a personal site or blog.
+
+

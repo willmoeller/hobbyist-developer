@@ -19,7 +19,7 @@ layout: default
   <ul>
     {% for post in site.posts %}
       <li class="post-preview">
-        <h4><a href="{{site.base_url}}{{post.url}}">{{ post.title }}</a></h4>
+        <h4><a href="{{site.base_url}}{{post.url}}" class="post-link">{{ post.title }}</a></h4>
         <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
         <p>{{ post.summary }}</p>
       </li>
