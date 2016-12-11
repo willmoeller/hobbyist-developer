@@ -17,5 +17,6 @@ gem "jekyll", "3.3.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-
+  gem "kramdown", "1.13.1"
+  gem "rouge", "1.11.1"
 end
